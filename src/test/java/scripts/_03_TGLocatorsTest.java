@@ -1,7 +1,9 @@
 package scripts;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -10,14 +12,9 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class _02_AppleTest {
-    /*
-    validateTitleAndURL
-    Go to https://www.apple.com/
-    Validate its title is apple
-    Validate its URL is https://www.apple.com/
+public class _03_TGLocatorsTest {
 
-     */
+
     public static WebDriver driver; //declaration
 
     @BeforeMethod
@@ -28,7 +25,7 @@ public class _02_AppleTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-        driver.get("https://www.apple.com/");
+        driver.get("https://techglobal-training.netlify.app/frontend/locators");
     }
 
     @AfterMethod
@@ -36,11 +33,11 @@ public class _02_AppleTest {
         Thread.sleep(3000);
         driver.quit();
     }
-
     @Test
-    public void validateTitleAndUrl(){
+    public void validateKiwiProgram(){
 
-        Assert.assertEquals(driver.getTitle(), "Apple");
-        Assert.assertEquals(driver.getCurrentUrl(), "https://www.apple.com/");
+        WebElement kiwi = driver.findElement(By.id("item_kiwi"));
+        Assert.assertTrue(kiwi.isDisplayed());
+
     }
 }
