@@ -1,2 +1,4 @@
-package scripts;public class _01_ProjectTest {
+package scripts;
+
+public class _01_ProjectTest {
 }
