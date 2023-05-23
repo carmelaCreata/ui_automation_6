@@ -14,42 +14,35 @@ import org.testng.annotations.Test;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class _03_TGLocatorsTest {
+public class _03_TGLocatorsTest extends Base {
 
-
-    public static WebDriver driver; //declaration
+ /*
+    Test case 1:
+    Go to "https://techglobal-training.com/frontend/locators"
+    Validate the "Kiwi" paragraph
+     */
 
     @BeforeMethod
-    public void setUp(){
-        WebDriverManager.chromedriver().setup(); //initialization
-
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-        driver.get("https://techglobal-training.netlify.app/frontend/locators");
+    public void setPage(){
+        driver.get("https://techglobal-training.com/frontend/locators");
     }
 
-    @AfterMethod
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(3000);
-        driver.quit();
-    }
-    @Test
-    public void validateKiwiProgram(){
-
+    @Test(priority = 1)
+    public void validateKiwiParagraph(){
         WebElement kiwi_paragraph = driver.findElement(By.id("item_kiwi"));
+
         Assert.assertTrue(kiwi_paragraph.isDisplayed());
         Assert.assertEquals(kiwi_paragraph.getText(), "Kiwi");
-
     }
-    /*
+
+
+     /*
     Test case 2:
     Go to "https://techglobal-training.com/frontend/locators"
     Validate the "Orange" paragraph
      */
 
-    @Test
+    @Test(priority = 2)
     public void validateOrangeParagraph(){
         WebElement orange_paragraph = driver.findElement(By.name("item_orange"));
 
@@ -75,20 +68,21 @@ public class _03_TGLocatorsTest {
     Go to "https://techglobal-training.com/frontend/locators"
     Validate the "Grapes" paragraph
      */
-     @Test
-     public void validateGrapesParagraph(){
-         WebElement grapes_paragraph = driver.findElement(By.className("item_grapes"));
 
-         Assert.assertTrue(grapes_paragraph.isDisplayed());
-         Assert.assertEquals(grapes_paragraph.getText(), "Grapes");
-     }
+    @Test(priority = 3)
+    public void validateGrapesParagraph(){
+        WebElement grapes_paragraph = driver.findElement(By.className("item_grapes"));
+
+        Assert.assertTrue(grapes_paragraph.isDisplayed());
+        Assert.assertEquals(grapes_paragraph.getText(), "Grapes");
+    }
 
     /*
     Test case 4:
     Go to "https://techglobal-training.com/frontend/locators"
     Validate the "Kiwi", "Orange", "Grapes" paragraphs
      */
-    @Test
+    @Test(priority = 4)
     public void validateAllParagraphs(){
         List<WebElement> allParagraphs = driver.findElements(By.tagName("p")); // Kiwi, Orange, Grapes
 
@@ -106,42 +100,42 @@ public class _03_TGLocatorsTest {
    Validate the "Red Apple" link (displayed and enabled)
    Validate it navigates user to the "https://en.wikipedia.org/wiki/Red_apple"
     */
-    @Test
+    @Test(priority = 5)
     public void validateRedAppleLink(){
-        WebElement redAppleLink = driver.findElement(By.linkText("Red Apple"));
+        WebElement redApple = driver.findElement(By.linkText("Red Apple"));
 
-        Assert.assertTrue(redAppleLink.isDisplayed());
-        Assert.assertTrue(redAppleLink.isEnabled());
-        redAppleLink.click();
+        Assert.assertTrue(redApple.isDisplayed());
+        Assert.assertTrue(redApple.isEnabled());
 
+        Assert.assertEquals(redApple.getAttribute("href"), "https://en.wikipedia.org/wiki/Red_apple");
+
+        /*
+        Another way is to click and validate the URL
+        redApple.click();
         Assert.assertEquals(driver.getCurrentUrl(), "https://en.wikipedia.org/wiki/Red_apple");
+         */
     }
-      /*
-       Test case 6:
-       Go to "https://techglobal-training.com/frontend/locators"
-       Validate the "Red Apple", "Green Apple" and "Pineapple" links (displayed and enabled)
-       Validate they navigate user to the "https://en.wikipedia.org/wiki/Red_apple",
-       "https://en.wikipedia.org/wiki/Green_apple" and "https://en.wikipedia.org/wiki/Pineapple"
-        */
-    @Test
-    public static void validateAllLinks(){
-        List<WebElement> allLinks = driver.findElements(By.partialLinkText("pple"));
-        String[] expectedVisibleTexts = {"Red Apple", "Green Apple", "Pineapple"};
-        String[] expectedLinks = {"https://en.wikipedia.org/wiki/Red_apple","https://en.wikipedia.org/wiki/Green_apple",
-                "https://en.wikipedia.org/wiki/Pineapple"};
 
-        for (int i = 0; i <=2 ; i++) {
+
+    /*
+   Test case 6:
+   Go to "https://techglobal-training.com/frontend/locators"
+   Validate the "Red Apple", "Green Apple" and "Pineapple" links (displayed and enabled and their text)
+   Validate they navigate user to the "https://en.wikipedia.org/wiki/Red_apple", "https://en.wikipedia.org/wiki/Green_apple" and "https://en.wikipedia.org/wiki/Pineapple"
+    */
+    @Test(priority = 6)
+    public void validateAllLinks(){
+        List<WebElement> allLinks = driver.findElements(By.partialLinkText("pple")); // 3 links
+        String[] expectedVisibleTexts = {"Red Apple", "Green Apple", "Pineapple"};
+        String[] expectedLinks = {"https://en.wikipedia.org/wiki/Red_apple", "https://en.wikipedia.org/wiki/Green_apple", "https://en.wikipedia.org/wiki/Pineapple"};
+
+        for (int i = 0; i <= 2; i++) {
             Assert.assertTrue(allLinks.get(i).isDisplayed());
             Assert.assertTrue(allLinks.get(i).isEnabled());
             Assert.assertEquals(allLinks.get(i).getText(), expectedVisibleTexts[i]);
             Assert.assertEquals(allLinks.get(i).getAttribute("href"), expectedLinks[i]);
-
         }
-
-
-
-        }
-
+    }
 
 
 }
