@@ -61,8 +61,6 @@ public class _13_IFrameTest extends Base{
         Assert.assertEquals(result.getText(), "You entered: John Doe");
 
 
-
-
     }
 
 
