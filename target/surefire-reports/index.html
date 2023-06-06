@@ -1,0 +1,2938 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-All_Test_Suite">
+              <span class="suite-name border-failed">All Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-All_Test_Suite">
+                    <span>regression.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-All_Test_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-All_Test_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-All_Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-All_Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-All_Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-All_Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">65 methods, 5 failed,   60 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._05_FacebookTest" hash-for-method="validateFacebookInvalidLoginAttempt">validateFacebookInvalidLoginAttempt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._04_TGLocatorTest" hash-for-method="validateListHeaders">validateListHeaders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._02_Project" hash-for-method="validateResetPasswordModal">validateResetPasswordModal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._01_Project" hash-for-method="validateTheContactUsInformation">validateTheContactUsInformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._01_Project" hash-for-method="validateTheFullNameInputBox">validateTheFullNameInputBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-All_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._09_TGCheckboxTest" hash-for-method="checkboxTest2">checkboxTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._12_TGAlertsTest" hash-for-method="confirmationAlert">confirmationAlert</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._11_TGDropdownsTest" hash-for-method="dropdownTestCase">dropdownTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._11_TGDropdownsTest" hash-for-method="productColorTest">productColorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._11_TGDropdownsTest" hash-for-method="productDeliveryTest">productDeliveryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._11_TGDropdownsTest" hash-for-method="productDropdownTest">productDropdownTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._03_TGLocatorsTest" hash-for-method="validateAllLinks">validateAllLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._03_TGLocatorsTest" hash-for-method="validateAllParagraphs">validateAllParagraphs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._04_TGLocatorTest" hash-for-method="validateAutomationTools">validateAutomationTools</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._09_TGCheckboxTest" hash-for-method="validateCheckboxes">validateCheckboxes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._07_TGDynamicElementsTest" hash-for-method="validateDynamicElementBox1">validateDynamicElementBox1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._07_TGDynamicElementsTest" hash-for-method="validateDynamicElementBox2">validateDynamicElementBox2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._07_TGDynamicElementsTest" hash-for-method="validateDynamicElementBoxes">validateDynamicElementBoxes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._17_TGStaticTableTest" hash-for-method="validateEachCell">validateEachCell</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._05_FacebookTest" hash-for-method="validateFacebookLogin">validateFacebookLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._17_TGStaticTableTest" hash-for-method="validateFirstRow">validateFirstRow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._02_Project" hash-for-method="validateForgotPasswordAndResetPassword">validateForgotPasswordAndResetPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._03_TGLocatorsTest" hash-for-method="validateGrapesParagraph">validateGrapesParagraph</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._02_Project" hash-for-method="validateInvalidLogin">validateInvalidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._02_Project" hash-for-method="validateInvalidLoginWithWrongCredentials">validateInvalidLoginWithWrongCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._02_Project" hash-for-method="validateInvalidLoginWithWrongPassword">validateInvalidLoginWithWrongPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._03_TGLocatorsTest" hash-for-method="validateKiwiParagraph">validateKiwiParagraph</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._04_TGLocatorTest" hash-for-method="validateLanguages">validateLanguages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._17_TGStaticTableTest" hash-for-method="validateLastColumn">validateLastColumn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._02_Project" hash-for-method="validateLoginForm">validateLoginForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._02_Project" hash-for-method="validateLogout">validateLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._03_TGLocatorsTest" hash-for-method="validateOrangeParagraph">validateOrangeParagraph</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._10_TGRadioButtonsTest" hash-for-method="validatePracticeMore">validatePracticeMore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._10_TGRadioButtonsTest" hash-for-method="validateRadioButtons">validateRadioButtons</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._03_TGLocatorsTest" hash-for-method="validateRedAppleLink">validateRedAppleLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._02_Project" hash-for-method="validateResetPasswordForm">validateResetPasswordForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._01_GoogleTest" hash-for-method="validateSearchBar">validateSearchBar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._01_GoogleTest" hash-for-method="validateSearchButton">validateSearchButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._18_TGSortableTableTest" hash-for-method="validateSortAscByQuantity">validateSortAscByQuantity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._18_TGSortableTableTest" hash-for-method="validateSortDscByQuantity">validateSortDscByQuantity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._17_TGStaticTableTest" hash-for-method="validateTableHeaders">validateTableHeaders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._01_Project" hash-for-method="validateTheAddressInputBox">validateTheAddressInputBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._14_MultipleWindowsTest" hash-for-method="validateTheAppleNavigation">validateTheAppleNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._01_Project" hash-for-method="validateTheConsentCheckbox">validateTheConsentCheckbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._01_Project" hash-for-method="validateTheEmailInputBox">validateTheEmailInputBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._13_IFrameTest" hash-for-method="validateTheFormSubmission">validateTheFormSubmission</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._01_Project" hash-for-method="validateTheFormSubmission">validateTheFormSubmission</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._01_Project" hash-for-method="validateTheGenderRadioButton">validateTheGenderRadioButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._04_TGLocatorTest" hash-for-method="validateTheHeader">validateTheHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._14_MultipleWindowsTest" hash-for-method="validateTheLinkURLs">validateTheLinkURLs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._01_Project" hash-for-method="validateTheMessageTextArea">validateTheMessageTextArea</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._14_MultipleWindowsTest" hash-for-method="validateTheMicrosoftNavigation">validateTheMicrosoftNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._13_IFrameTest" hash-for-method="validateTheParagraph">validateTheParagraph</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._01_Project" hash-for-method="validateThePhoneInputBox">validateThePhoneInputBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._01_Project" hash-for-method="validateTheSubmitButton">validateTheSubmitButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._14_MultipleWindowsTest" hash-for-method="validateTheTeslaNavigation">validateTheTeslaNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._01_GoogleTest" hash-for-method="validateTitleAndURL">validateTitleAndURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._02_AppleTest" hash-for-method="validateTitleAndUrl">validateTitleAndUrl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._02_Project" hash-for-method="validateValidLogin">validateValidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._06_WikiTest" hash-for-method="validateWikiSearch1">validateWikiSearch1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._06_WikiTest" hash-for-method="validateWikiSearch2">validateWikiSearch2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._02_Project" hash-for-method="validateWrongUsername">validateWrongUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._08_TGWaitsTest" hash-for-method="waitForBlueBox">waitForBlueBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._08_TGWaitsTest" hash-for-method="waitForRedBox">waitForRedBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="scripts._12_TGAlertsTest" hash-for-method="warningAlert">warningAlert</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">scripts._02_Project</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateResetPasswordModal">
+                  </a> <!-- validateResetPasswordModal -->
+                  <span class="method-name">validateResetPasswordModal</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.\.modal\-card\-body&quot;}
+  (Session info: chrome=113.0.5672.126)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Carmelas-MacBook-Air.local&apos;, ip: &apos;2601:249:9382:dab0:0:0:0:22a2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_361&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /var/folders/jp/_bpmzzh9063...}, goog:chromeOptions: {debuggerAddress: localhost:53363}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 96d9aa8e7f5c68167328a86820915401
+*** Element info: {Using=class name, value=.modal-card-body}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at scripts._02_Project.validateResetPasswordModal(_02_Project.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Validate the Reset Password modal close button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">scripts._05_FacebookTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFacebookInvalidLoginAttempt">
+                  </a> <!-- validateFacebookInvalidLoginAttempt -->
+                  <span class="method-name">validateFacebookInvalidLoginAttempt</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The email you entered isn&apos;t connected to an account. Find your account and log in.] but found [The email you entered isn’t connected to an account. Find your account and log in.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at scripts._05_FacebookTest.validateFacebookInvalidLoginAttempt(_05_FacebookTest.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">scripts._01_Project</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheContactUsInformation">
+                  </a> <!-- validateTheContactUsInformation -->
+                  <span class="method-name">validateTheContactUsInformation</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [2860 S River Rd Suite 350, Des Plaines IL 60018] but found [2860 S River Rd Suite 480, Des Plaines, IL 60018]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at scripts._01_Project.validateTheContactUsInformation(_01_Project.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Test Case 01 - Validate the Contact Us information)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheFullNameInputBox">
+                  </a> <!-- validateTheFullNameInputBox -->
+                  <span class="method-name">validateTheFullNameInputBox</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Enter your name] but found [Enter your full name]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at scripts._01_Project.validateTheFullNameInputBox(_01_Project.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Test Case 02 - Validate the Full name input box)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">scripts._04_TGLocatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateListHeaders">
+                  </a> <!-- validateListHeaders -->
+                  <span class="method-name">validateListHeaders</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression .Xpath_subheader__VOtsU because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;.Xpath_subheader__VOtsU&apos; is not a valid XPath expression.
+  (Session info: chrome=113.0.5672.126)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Carmelas-MacBook-Air.local&apos;, ip: &apos;2601:249:9382:dab0:0:0:0:22a2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_361&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /var/folders/jp/_bpmzzh9063...}, goog:chromeOptions: {debuggerAddress: localhost:53667}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ec66964d68e6b2ac100b84b0f588b3e3
+*** Element info: {Using=xpath, value=.Xpath_subheader__VOtsU}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at scripts._04_TGLocatorTest.validateListHeaders(_04_TGLocatorTest.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._12_TGAlertsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmationAlert">
+                  </a> <!-- confirmationAlert -->
+                  <span class="method-name">confirmationAlert</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="warningAlert">
+                  </a> <!-- warningAlert -->
+                  <span class="method-name">warningAlert</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._03_TGLocatorsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAllLinks">
+                  </a> <!-- validateAllLinks -->
+                  <span class="method-name">validateAllLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAllParagraphs">
+                  </a> <!-- validateAllParagraphs -->
+                  <span class="method-name">validateAllParagraphs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateGrapesParagraph">
+                  </a> <!-- validateGrapesParagraph -->
+                  <span class="method-name">validateGrapesParagraph</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateKiwiParagraph">
+                  </a> <!-- validateKiwiParagraph -->
+                  <span class="method-name">validateKiwiParagraph</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateOrangeParagraph">
+                  </a> <!-- validateOrangeParagraph -->
+                  <span class="method-name">validateOrangeParagraph</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateRedAppleLink">
+                  </a> <!-- validateRedAppleLink -->
+                  <span class="method-name">validateRedAppleLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._08_TGWaitsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="waitForBlueBox">
+                  </a> <!-- waitForBlueBox -->
+                  <span class="method-name">waitForBlueBox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="waitForRedBox">
+                  </a> <!-- waitForRedBox -->
+                  <span class="method-name">waitForRedBox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._05_FacebookTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFacebookLogin">
+                  </a> <!-- validateFacebookLogin -->
+                  <span class="method-name">validateFacebookLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._01_Project</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheAddressInputBox">
+                  </a> <!-- validateTheAddressInputBox -->
+                  <span class="method-name">validateTheAddressInputBox</span>
+                  <em>
+(Test Case 04 - Validate the Address input box)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheConsentCheckbox">
+                  </a> <!-- validateTheConsentCheckbox -->
+                  <span class="method-name">validateTheConsentCheckbox</span>
+                  <em>
+(Test Case 08 - Validate the Consent checkbox)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheEmailInputBox">
+                  </a> <!-- validateTheEmailInputBox -->
+                  <span class="method-name">validateTheEmailInputBox</span>
+                  <em>
+(Test Case 05 - Validate the Email input box)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheFormSubmission">
+                  </a> <!-- validateTheFormSubmission -->
+                  <span class="method-name">validateTheFormSubmission</span>
+                  <em>
+(Test Case 10 - Validate the form submission)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheGenderRadioButton">
+                  </a> <!-- validateTheGenderRadioButton -->
+                  <span class="method-name">validateTheGenderRadioButton</span>
+                  <em>
+(Test Case 03 - Validate the Gender radio button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheMessageTextArea">
+                  </a> <!-- validateTheMessageTextArea -->
+                  <span class="method-name">validateTheMessageTextArea</span>
+                  <em>
+(Test Case 07 - Validate the Message text area)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateThePhoneInputBox">
+                  </a> <!-- validateThePhoneInputBox -->
+                  <span class="method-name">validateThePhoneInputBox</span>
+                  <em>
+(Test Case 06 - Validate the Phone input box)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheSubmitButton">
+                  </a> <!-- validateTheSubmitButton -->
+                  <span class="method-name">validateTheSubmitButton</span>
+                  <em>
+(Test Case 09 - Validate the SUBMIT button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._07_TGDynamicElementsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDynamicElementBox1">
+                  </a> <!-- validateDynamicElementBox1 -->
+                  <span class="method-name">validateDynamicElementBox1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDynamicElementBox2">
+                  </a> <!-- validateDynamicElementBox2 -->
+                  <span class="method-name">validateDynamicElementBox2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDynamicElementBoxes">
+                  </a> <!-- validateDynamicElementBoxes -->
+                  <span class="method-name">validateDynamicElementBoxes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._04_TGLocatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAutomationTools">
+                  </a> <!-- validateAutomationTools -->
+                  <span class="method-name">validateAutomationTools</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLanguages">
+                  </a> <!-- validateLanguages -->
+                  <span class="method-name">validateLanguages</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheHeader">
+                  </a> <!-- validateTheHeader -->
+                  <span class="method-name">validateTheHeader</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._10_TGRadioButtonsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePracticeMore">
+                  </a> <!-- validatePracticeMore -->
+                  <span class="method-name">validatePracticeMore</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateRadioButtons">
+                  </a> <!-- validateRadioButtons -->
+                  <span class="method-name">validateRadioButtons</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._11_TGDropdownsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dropdownTestCase">
+                  </a> <!-- dropdownTestCase -->
+                  <span class="method-name">dropdownTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productColorTest">
+                  </a> <!-- productColorTest -->
+                  <span class="method-name">productColorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productDeliveryTest">
+                  </a> <!-- productDeliveryTest -->
+                  <span class="method-name">productDeliveryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productDropdownTest">
+                  </a> <!-- productDropdownTest -->
+                  <span class="method-name">productDropdownTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._13_IFrameTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheFormSubmission">
+                  </a> <!-- validateTheFormSubmission -->
+                  <span class="method-name">validateTheFormSubmission</span>
+                  <em>
+(TC345 Validate the form submission)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheParagraph">
+                  </a> <!-- validateTheParagraph -->
+                  <span class="method-name">validateTheParagraph</span>
+                  <em>
+(TC123: Validate the IFrame Page content paragraph)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._18_TGSortableTableTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSortAscByQuantity">
+                  </a> <!-- validateSortAscByQuantity -->
+                  <span class="method-name">validateSortAscByQuantity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSortDscByQuantity">
+                  </a> <!-- validateSortDscByQuantity -->
+                  <span class="method-name">validateSortDscByQuantity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._02_Project</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateForgotPasswordAndResetPassword">
+                  </a> <!-- validateForgotPasswordAndResetPassword -->
+                  <span class="method-name">validateForgotPasswordAndResetPassword</span>
+                  <em>
+( Validate the Forgot Password? Link and Reset Password modal
+)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateInvalidLogin">
+                  </a> <!-- validateInvalidLogin -->
+                  <span class="method-name">validateInvalidLogin</span>
+                  <em>
+(Validate the invalid login with the empty credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateInvalidLoginWithWrongCredentials">
+                  </a> <!-- validateInvalidLoginWithWrongCredentials -->
+                  <span class="method-name">validateInvalidLoginWithWrongCredentials</span>
+                  <em>
+( Validate the invalid login with the wrong username and password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateInvalidLoginWithWrongPassword">
+                  </a> <!-- validateInvalidLoginWithWrongPassword -->
+                  <span class="method-name">validateInvalidLoginWithWrongPassword</span>
+                  <em>
+(Validate the invalid login with the wrong password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLoginForm">
+                  </a> <!-- validateLoginForm -->
+                  <span class="method-name">validateLoginForm</span>
+                  <em>
+(Validate the login form)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLogout">
+                  </a> <!-- validateLogout -->
+                  <span class="method-name">validateLogout</span>
+                  <em>
+(Validate the logout)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateResetPasswordForm">
+                  </a> <!-- validateResetPasswordForm -->
+                  <span class="method-name">validateResetPasswordForm</span>
+                  <em>
+( Validate the Reset Password form submission)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateValidLogin">
+                  </a> <!-- validateValidLogin -->
+                  <span class="method-name">validateValidLogin</span>
+                  <em>
+(Validate the valid login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateWrongUsername">
+                  </a> <!-- validateWrongUsername -->
+                  <span class="method-name">validateWrongUsername</span>
+                  <em>
+(Validate the invalid login with the wrong username)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._02_AppleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTitleAndUrl">
+                  </a> <!-- validateTitleAndUrl -->
+                  <span class="method-name">validateTitleAndUrl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._17_TGStaticTableTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEachCell">
+                  </a> <!-- validateEachCell -->
+                  <span class="method-name">validateEachCell</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFirstRow">
+                  </a> <!-- validateFirstRow -->
+                  <span class="method-name">validateFirstRow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLastColumn">
+                  </a> <!-- validateLastColumn -->
+                  <span class="method-name">validateLastColumn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTableHeaders">
+                  </a> <!-- validateTableHeaders -->
+                  <span class="method-name">validateTableHeaders</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._01_GoogleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSearchBar">
+                  </a> <!-- validateSearchBar -->
+                  <span class="method-name">validateSearchBar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSearchButton">
+                  </a> <!-- validateSearchButton -->
+                  <span class="method-name">validateSearchButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTitleAndURL">
+                  </a> <!-- validateTitleAndURL -->
+                  <span class="method-name">validateTitleAndURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._06_WikiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateWikiSearch1">
+                  </a> <!-- validateWikiSearch1 -->
+                  <span class="method-name">validateWikiSearch1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateWikiSearch2">
+                  </a> <!-- validateWikiSearch2 -->
+                  <span class="method-name">validateWikiSearch2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._14_MultipleWindowsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheAppleNavigation">
+                  </a> <!-- validateTheAppleNavigation -->
+                  <span class="method-name">validateTheAppleNavigation</span>
+                  <em>
+(TC321 Validate the Apple navigation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheLinkURLs">
+                  </a> <!-- validateTheLinkURLs -->
+                  <span class="method-name">validateTheLinkURLs</span>
+                  <em>
+(Validate link URLs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheMicrosoftNavigation">
+                  </a> <!-- validateTheMicrosoftNavigation -->
+                  <span class="method-name">validateTheMicrosoftNavigation</span>
+                  <em>
+(TC322 Validate the Microsoft navigation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTheTeslaNavigation">
+                  </a> <!-- validateTheTeslaNavigation -->
+                  <span class="method-name">validateTheTeslaNavigation</span>
+                  <em>
+(TC323 Validate the Tesla navigation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">scripts._09_TGCheckboxTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkboxTest2">
+                  </a> <!-- checkboxTest2 -->
+                  <span class="method-name">checkboxTest2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCheckboxes">
+                  </a> <!-- validateCheckboxes -->
+                  <span class="method-name">validateCheckboxes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+        </div> <!-- panel All_Test_Suite -->
+        <div panel-name="test-xml-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/carmelacreata/IdeaProjects/ui_automation_6/regression.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;All Test Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;/Users/carmelacreata/IdeaProjects/ui_automation_6/src/test/java/scripts&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;scripts._01_GoogleTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateSearchBar&quot;/&gt;
+          &lt;include name=&quot;validateTitleAndURL&quot;/&gt;
+          &lt;include name=&quot;validateSearchButton&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._01_GoogleTest --&gt;
+      &lt;class name=&quot;scripts._01_Project&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateTheContactUsInformation&quot;/&gt;
+          &lt;include name=&quot;validateTheFullNameInputBox&quot;/&gt;
+          &lt;include name=&quot;validateTheGenderRadioButton&quot;/&gt;
+          &lt;include name=&quot;validateTheAddressInputBox&quot;/&gt;
+          &lt;include name=&quot;validateTheEmailInputBox&quot;/&gt;
+          &lt;include name=&quot;validateThePhoneInputBox&quot;/&gt;
+          &lt;include name=&quot;validateTheMessageTextArea&quot;/&gt;
+          &lt;include name=&quot;validateTheConsentCheckbox&quot;/&gt;
+          &lt;include name=&quot;validateTheSubmitButton&quot;/&gt;
+          &lt;include name=&quot;validateTheFormSubmission&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._01_Project --&gt;
+      &lt;class name=&quot;scripts._02_AppleTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateTitleAndUrl&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._02_AppleTest --&gt;
+      &lt;class name=&quot;scripts._02_Project&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateLoginForm&quot;/&gt;
+          &lt;include name=&quot;validateValidLogin&quot;/&gt;
+          &lt;include name=&quot;validateLogout&quot;/&gt;
+          &lt;include name=&quot;validateForgotPasswordAndResetPassword&quot;/&gt;
+          &lt;include name=&quot;validateResetPasswordModal&quot;/&gt;
+          &lt;include name=&quot;validateResetPasswordForm&quot;/&gt;
+          &lt;include name=&quot;validateInvalidLogin&quot;/&gt;
+          &lt;include name=&quot;validateWrongUsername&quot;/&gt;
+          &lt;include name=&quot;validateInvalidLoginWithWrongPassword&quot;/&gt;
+          &lt;include name=&quot;validateInvalidLoginWithWrongCredentials&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._02_Project --&gt;
+      &lt;class name=&quot;scripts._03_TGLocatorsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateKiwiParagraph&quot;/&gt;
+          &lt;include name=&quot;validateOrangeParagraph&quot;/&gt;
+          &lt;include name=&quot;validateGrapesParagraph&quot;/&gt;
+          &lt;include name=&quot;validateAllParagraphs&quot;/&gt;
+          &lt;include name=&quot;validateRedAppleLink&quot;/&gt;
+          &lt;include name=&quot;validateAllLinks&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._03_TGLocatorsTest --&gt;
+      &lt;class name=&quot;scripts._04_TGLocatorTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateTheHeader&quot;/&gt;
+          &lt;include name=&quot;validateLanguages&quot;/&gt;
+          &lt;include name=&quot;validateAutomationTools&quot;/&gt;
+          &lt;include name=&quot;validateListHeaders&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._04_TGLocatorTest --&gt;
+      &lt;class name=&quot;scripts._05_FacebookTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateFacebookLogin&quot;/&gt;
+          &lt;include name=&quot;validateFacebookInvalidLoginAttempt&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._05_FacebookTest --&gt;
+      &lt;class name=&quot;scripts._06_WikiTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateWikiSearch1&quot;/&gt;
+          &lt;include name=&quot;validateWikiSearch2&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._06_WikiTest --&gt;
+      &lt;class name=&quot;scripts._07_TGDynamicElementsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateDynamicElementBox1&quot;/&gt;
+          &lt;include name=&quot;validateDynamicElementBox2&quot;/&gt;
+          &lt;include name=&quot;validateDynamicElementBoxes&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._07_TGDynamicElementsTest --&gt;
+      &lt;class name=&quot;scripts._08_TGWaitsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;waitForRedBox&quot;/&gt;
+          &lt;include name=&quot;waitForBlueBox&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._08_TGWaitsTest --&gt;
+      &lt;class name=&quot;scripts._09_TGCheckboxTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateCheckboxes&quot;/&gt;
+          &lt;include name=&quot;checkboxTest2&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._09_TGCheckboxTest --&gt;
+      &lt;class name=&quot;scripts._10_TGRadioButtonsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateRadioButtons&quot;/&gt;
+          &lt;include name=&quot;validatePracticeMore&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._10_TGRadioButtonsTest --&gt;
+      &lt;class name=&quot;scripts._11_TGDropdownsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;productDropdownTest&quot;/&gt;
+          &lt;include name=&quot;productColorTest&quot;/&gt;
+          &lt;include name=&quot;productDeliveryTest&quot;/&gt;
+          &lt;include name=&quot;dropdownTestCase&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._11_TGDropdownsTest --&gt;
+      &lt;class name=&quot;scripts._12_TGAlertsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;warningAlert&quot;/&gt;
+          &lt;include name=&quot;confirmationAlert&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._12_TGAlertsTest --&gt;
+      &lt;class name=&quot;scripts._13_IFrameTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateTheParagraph&quot;/&gt;
+          &lt;include name=&quot;validateTheFormSubmission&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._13_IFrameTest --&gt;
+      &lt;class name=&quot;scripts._14_MultipleWindowsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateTheAppleNavigation&quot;/&gt;
+          &lt;include name=&quot;validateTheMicrosoftNavigation&quot;/&gt;
+          &lt;include name=&quot;validateTheTeslaNavigation&quot;/&gt;
+          &lt;include name=&quot;validateTheLinkURLs&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._14_MultipleWindowsTest --&gt;
+      &lt;class name=&quot;scripts._17_TGStaticTableTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateTableHeaders&quot;/&gt;
+          &lt;include name=&quot;validateFirstRow&quot;/&gt;
+          &lt;include name=&quot;validateLastColumn&quot;/&gt;
+          &lt;include name=&quot;validateEachCell&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._17_TGStaticTableTest --&gt;
+      &lt;class name=&quot;scripts._18_TGSortableTableTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validateSortAscByQuantity&quot;/&gt;
+          &lt;include name=&quot;validateSortDscByQuantity&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._18_TGSortableTableTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- /Users/carmelacreata/IdeaProjects/ui_automation_6/src/test/java/scripts --&gt;
+&lt;/suite&gt; &lt;!-- All Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">/Users/carmelacreata/IdeaProjects/ui_automation_6/src/test/java/scripts (18 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_Test_Suite');
+function tableData_All_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(65);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validateTheLinkURLs')
+data.setCell(0, 2, 'scripts._14_MultipleWindowsTest')
+data.setCell(0, 3, 46427);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateResetPasswordModal')
+data.setCell(1, 2, 'scripts._02_Project')
+data.setCell(1, 3, 42207);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'productDeliveryTest')
+data.setCell(2, 2, 'scripts._11_TGDropdownsTest')
+data.setCell(2, 3, 41911);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'waitForBlueBox')
+data.setCell(3, 2, 'scripts._08_TGWaitsTest')
+data.setCell(3, 3, 36225);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateTheTeslaNavigation')
+data.setCell(4, 2, 'scripts._14_MultipleWindowsTest')
+data.setCell(4, 3, 18088);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateTheMicrosoftNavigation')
+data.setCell(5, 2, 'scripts._14_MultipleWindowsTest')
+data.setCell(5, 3, 14168);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateTheGenderRadioButton')
+data.setCell(6, 2, 'scripts._01_Project')
+data.setCell(6, 3, 11159);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'waitForRedBox')
+data.setCell(7, 2, 'scripts._08_TGWaitsTest')
+data.setCell(7, 3, 11120);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateFacebookInvalidLoginAttempt')
+data.setCell(8, 2, 'scripts._05_FacebookTest')
+data.setCell(8, 3, 10559);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateTheAppleNavigation')
+data.setCell(9, 2, 'scripts._14_MultipleWindowsTest')
+data.setCell(9, 3, 9522);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateTheFormSubmission')
+data.setCell(10, 2, 'scripts._01_Project')
+data.setCell(10, 3, 5857);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validateTheConsentCheckbox')
+data.setCell(11, 2, 'scripts._01_Project')
+data.setCell(11, 3, 5767);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateResetPasswordForm')
+data.setCell(12, 2, 'scripts._02_Project')
+data.setCell(12, 3, 4805);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validateLogout')
+data.setCell(13, 2, 'scripts._02_Project')
+data.setCell(13, 3, 4692);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validateValidLogin')
+data.setCell(14, 2, 'scripts._02_Project')
+data.setCell(14, 3, 4473);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'validateWikiSearch1')
+data.setCell(15, 2, 'scripts._06_WikiTest')
+data.setCell(15, 3, 3812);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validateTheFormSubmission')
+data.setCell(16, 2, 'scripts._13_IFrameTest')
+data.setCell(16, 3, 3703);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'validateInvalidLoginWithWrongPassword')
+data.setCell(17, 2, 'scripts._02_Project')
+data.setCell(17, 3, 3537);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'validateWrongUsername')
+data.setCell(18, 2, 'scripts._02_Project')
+data.setCell(18, 3, 3523);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'validateLoginForm')
+data.setCell(19, 2, 'scripts._02_Project')
+data.setCell(19, 3, 3331);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'validateWikiSearch2')
+data.setCell(20, 2, 'scripts._06_WikiTest')
+data.setCell(20, 3, 3325);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'validateInvalidLoginWithWrongCredentials')
+data.setCell(21, 2, 'scripts._02_Project')
+data.setCell(21, 3, 3213);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'validateForgotPasswordAndResetPassword')
+data.setCell(22, 2, 'scripts._02_Project')
+data.setCell(22, 3, 3075);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'validateSortAscByQuantity')
+data.setCell(23, 2, 'scripts._18_TGSortableTableTest')
+data.setCell(23, 3, 2890);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'dropdownTestCase')
+data.setCell(24, 2, 'scripts._11_TGDropdownsTest')
+data.setCell(24, 3, 2354);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'validateFacebookLogin')
+data.setCell(25, 2, 'scripts._05_FacebookTest')
+data.setCell(25, 3, 1693);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'validateInvalidLogin')
+data.setCell(26, 2, 'scripts._02_Project')
+data.setCell(26, 3, 1626);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'validateRadioButtons')
+data.setCell(27, 2, 'scripts._10_TGRadioButtonsTest')
+data.setCell(27, 3, 1511);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'confirmationAlert')
+data.setCell(28, 2, 'scripts._12_TGAlertsTest')
+data.setCell(28, 3, 1464);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'validatePracticeMore')
+data.setCell(29, 2, 'scripts._10_TGRadioButtonsTest')
+data.setCell(29, 3, 1137);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'checkboxTest2')
+data.setCell(30, 2, 'scripts._09_TGCheckboxTest')
+data.setCell(30, 3, 1046);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'validateTheParagraph')
+data.setCell(31, 2, 'scripts._13_IFrameTest')
+data.setCell(31, 3, 1019);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'validateCheckboxes')
+data.setCell(32, 2, 'scripts._09_TGCheckboxTest')
+data.setCell(32, 3, 879);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'validateFirstRow')
+data.setCell(33, 2, 'scripts._17_TGStaticTableTest')
+data.setCell(33, 3, 867);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'validateAllLinks')
+data.setCell(34, 2, 'scripts._03_TGLocatorsTest')
+data.setCell(34, 3, 808);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'validateTitleAndUrl')
+data.setCell(35, 2, 'scripts._02_AppleTest')
+data.setCell(35, 3, 735);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'validateSortDscByQuantity')
+data.setCell(36, 2, 'scripts._18_TGSortableTableTest')
+data.setCell(36, 3, 709);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'validateDynamicElementBox2')
+data.setCell(37, 2, 'scripts._07_TGDynamicElementsTest')
+data.setCell(37, 3, 707);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'validateTheEmailInputBox')
+data.setCell(38, 2, 'scripts._01_Project')
+data.setCell(38, 3, 656);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'validateTheContactUsInformation')
+data.setCell(39, 2, 'scripts._01_Project')
+data.setCell(39, 3, 650);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'validateTheMessageTextArea')
+data.setCell(40, 2, 'scripts._01_Project')
+data.setCell(40, 3, 606);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'validateTheAddressInputBox')
+data.setCell(41, 2, 'scripts._01_Project')
+data.setCell(41, 3, 598);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'validateThePhoneInputBox')
+data.setCell(42, 2, 'scripts._01_Project')
+data.setCell(42, 3, 588);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'validateRedAppleLink')
+data.setCell(43, 2, 'scripts._03_TGLocatorsTest')
+data.setCell(43, 3, 577);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'productDropdownTest')
+data.setCell(44, 2, 'scripts._11_TGDropdownsTest')
+data.setCell(44, 3, 569);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'validateGrapesParagraph')
+data.setCell(45, 2, 'scripts._03_TGLocatorsTest')
+data.setCell(45, 3, 559);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'warningAlert')
+data.setCell(46, 2, 'scripts._12_TGAlertsTest')
+data.setCell(46, 3, 552);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'validateAllParagraphs')
+data.setCell(47, 2, 'scripts._03_TGLocatorsTest')
+data.setCell(47, 3, 544);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'validateTheSubmitButton')
+data.setCell(48, 2, 'scripts._01_Project')
+data.setCell(48, 3, 539);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'productColorTest')
+data.setCell(49, 2, 'scripts._11_TGDropdownsTest')
+data.setCell(49, 3, 510);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'validateOrangeParagraph')
+data.setCell(50, 2, 'scripts._03_TGLocatorsTest')
+data.setCell(50, 3, 509);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'validateKiwiParagraph')
+data.setCell(51, 2, 'scripts._03_TGLocatorsTest')
+data.setCell(51, 3, 506);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'validateTheFullNameInputBox')
+data.setCell(52, 2, 'scripts._01_Project')
+data.setCell(52, 3, 486);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'validateAutomationTools')
+data.setCell(53, 2, 'scripts._04_TGLocatorTest')
+data.setCell(53, 3, 463);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'validateEachCell')
+data.setCell(54, 2, 'scripts._17_TGStaticTableTest')
+data.setCell(54, 3, 444);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'validateLanguages')
+data.setCell(55, 2, 'scripts._04_TGLocatorTest')
+data.setCell(55, 3, 428);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'validateTableHeaders')
+data.setCell(56, 2, 'scripts._17_TGStaticTableTest')
+data.setCell(56, 3, 424);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'validateLastColumn')
+data.setCell(57, 2, 'scripts._17_TGStaticTableTest')
+data.setCell(57, 3, 334);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'validateSearchButton')
+data.setCell(58, 2, 'scripts._01_GoogleTest')
+data.setCell(58, 3, 310);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'validateDynamicElementBoxes')
+data.setCell(59, 2, 'scripts._07_TGDynamicElementsTest')
+data.setCell(59, 3, 243);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'validateSearchBar')
+data.setCell(60, 2, 'scripts._01_GoogleTest')
+data.setCell(60, 3, 194);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'validateDynamicElementBox1')
+data.setCell(61, 2, 'scripts._07_TGDynamicElementsTest')
+data.setCell(61, 3, 179);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'validateTheHeader')
+data.setCell(62, 2, 'scripts._04_TGLocatorTest')
+data.setCell(62, 3, 135);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'validateListHeaders')
+data.setCell(63, 2, 'scripts._04_TGLocatorTest')
+data.setCell(63, 3, 98);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'validateTitleAndURL')
+data.setCell(64, 2, 'scripts._01_GoogleTest')
+data.setCell(64, 3, 52);
+window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-All_Test_Suite">
+              </div> <!-- times-div-All_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._01_GoogleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSearchButton</span>
+                <span class="method-start">17973 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18291 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">21396 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTitleAndURL</span>
+                <span class="method-start">37194 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">37250 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">40350 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSearchBar</span>
+                <span class="method-start">55721 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">55918 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._01_Project</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">59024 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">63963 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateTheContactUsInformation</span>
+                <span class="method-start">68131 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68788 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">68878 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">73722 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateTheFullNameInputBox</span>
+                <span class="method-start">77951 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">78440 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">78530 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">83333 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTheGenderRadioButton</span>
+                <span class="method-start">87594 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">98772 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">98875 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">103777 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTheAddressInputBox</span>
+                <span class="method-start">107971 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">108574 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">108664 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">113514 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTheEmailInputBox</span>
+                <span class="method-start">117925 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">118586 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">118679 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">123521 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateThePhoneInputBox</span>
+                <span class="method-start">127899 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">128487 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">128577 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">133398 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTheMessageTextArea</span>
+                <span class="method-start">137788 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">138395 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">138483 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">143286 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTheConsentCheckbox</span>
+                <span class="method-start">147228 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">153005 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">153106 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">157921 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTheSubmitButton</span>
+                <span class="method-start">162080 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">162621 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">162713 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">167493 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTheFormSubmission</span>
+                <span class="method-start">171690 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">177549 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._02_AppleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">177644 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTitleAndUrl</span>
+                <span class="method-start">189411 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">190149 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._02_Project</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">193286 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">198103 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLoginForm</span>
+                <span class="method-start">202255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">205587 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">205675 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">210491 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateValidLogin</span>
+                <span class="method-start">214766 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">219240 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">219331 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">224100 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLogout</span>
+                <span class="method-start">228330 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">233025 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">233120 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">237907 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateForgotPasswordAndResetPassword</span>
+                <span class="method-start">242141 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">245216 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">245303 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">250193 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateResetPasswordModal</span>
+                <span class="method-start">254508 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">296723 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">296835 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">301823 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateResetPasswordForm</span>
+                <span class="method-start">305895 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">310701 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">310799 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">315583 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateInvalidLogin</span>
+                <span class="method-start">319795 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">321422 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">321518 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">326301 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateWrongUsername</span>
+                <span class="method-start">330418 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">333941 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">334044 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">338911 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateInvalidLoginWithWrongPassword</span>
+                <span class="method-start">343071 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">346609 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">346709 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">351566 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateInvalidLoginWithWrongCredentials</span>
+                <span class="method-start">355726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">358940 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._03_TGLocatorsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">359033 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">363807 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateKiwiParagraph</span>
+                <span class="method-start">367363 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">367870 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">367968 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">372778 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateOrangeParagraph</span>
+                <span class="method-start">376262 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">376772 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">376864 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">381659 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateGrapesParagraph</span>
+                <span class="method-start">384785 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">385345 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">385475 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">390260 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAllParagraphs</span>
+                <span class="method-start">393799 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">394344 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">394439 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">399251 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateRedAppleLink</span>
+                <span class="method-start">402708 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">403286 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">403388 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">408221 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAllLinks</span>
+                <span class="method-start">411702 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">412510 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._04_TGLocatorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">412605 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">417426 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAutomationTools</span>
+                <span class="method-start">424092 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">424558 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">424651 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">429403 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLanguages</span>
+                <span class="method-start">436195 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">436624 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">436728 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">441567 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateListHeaders</span>
+                <span class="method-start">448062 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">448163 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">448261 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">453011 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTheHeader</span>
+                <span class="method-start">459887 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">460023 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._05_FacebookTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">460114 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">464920 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateFacebookInvalidLoginAttempt</span>
+                <span class="method-start">471134 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">481694 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">481807 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">486622 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateFacebookLogin</span>
+                <span class="method-start">493011 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">494707 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._06_WikiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">494817 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">499607 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateWikiSearch1</span>
+                <span class="method-start">501082 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">504895 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">505098 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">509898 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateWikiSearch2</span>
+                <span class="method-start">511254 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">514581 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._07_TGDynamicElementsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">514750 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">519548 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDynamicElementBox1</span>
+                <span class="method-start">526327 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">526507 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">526601 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">531358 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDynamicElementBox2</span>
+                <span class="method-start">537156 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">537863 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">537962 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">542798 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDynamicElementBoxes</span>
+                <span class="method-start">549390 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">549635 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._08_TGWaitsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">549737 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">554571 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">waitForBlueBox</span>
+                <span class="method-start">560356 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">596581 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">596682 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">601740 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">waitForRedBox</span>
+                <span class="method-start">607877 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">618999 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._09_TGCheckboxTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">619102 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">623909 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkboxTest2</span>
+                <span class="method-start">630686 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">631735 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">631845 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">636652 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateCheckboxes</span>
+                <span class="method-start">643344 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">644223 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._10_TGRadioButtonsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">644314 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">649180 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validatePracticeMore</span>
+                <span class="method-start">655586 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">656725 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">656814 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">661606 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateRadioButtons</span>
+                <span class="method-start">667462 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">668974 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._11_TGDropdownsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">669080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">674057 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dropdownTestCase</span>
+                <span class="method-start">681498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">683853 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">683952 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">688853 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productColorTest</span>
+                <span class="method-start">696345 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">696855 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">696951 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">701765 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productDeliveryTest</span>
+                <span class="method-start">708328 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">750242 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">750359 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">755413 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productDropdownTest</span>
+                <span class="method-start">762823 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">763394 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._12_TGAlertsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">763491 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">768321 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">confirmationAlert</span>
+                <span class="method-start">774075 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">775540 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">775645 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">780438 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">warningAlert</span>
+                <span class="method-start">787084 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">787638 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._13_IFrameTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">787738 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">792561 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTheParagraph</span>
+                <span class="method-start">796265 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">797285 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">797374 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">802249 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTheFormSubmission</span>
+                <span class="method-start">806167 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">809872 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._14_MultipleWindowsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">809962 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">814781 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTheAppleNavigation</span>
+                <span class="method-start">820704 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">830229 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">830337 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">835164 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTheMicrosoftNavigation</span>
+                <span class="method-start">841450 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">855619 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">858747 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">863575 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTheTeslaNavigation</span>
+                <span class="method-start">870040 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">888129 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">888238 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">893142 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTheLinkURLs</span>
+                <span class="method-start">899110 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">945549 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._17_TGStaticTableTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">945669 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">950589 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateEachCell</span>
+                <span class="method-start">957225 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">957670 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">957753 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">962541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateFirstRow</span>
+                <span class="method-start">968498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">969365 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">969452 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">974240 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLastColumn</span>
+                <span class="method-start">980815 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">981150 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">981235 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">986052 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateTableHeaders</span>
+                <span class="method-start">992986 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">993413 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">scripts._18_TGSortableTableTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">993502 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">998307 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSortAscByQuantity</span>
+                <span class="method-start">1004928 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1007823 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1007919 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setPage</span>
+                <span class="method-start">1012689 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSortDscByQuantity</span>
+                <span class="method-start">1019440 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1020151 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

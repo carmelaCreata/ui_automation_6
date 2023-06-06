@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
+  <test thread-count="5" verbose="0" name="/Users/carmelacreata/IdeaProjects/ui_automation_6/src/test/java/scripts(failed)">
+    <classes>
+      <class name="scripts._02_Project">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setPage"/>
+          <include name="validateResetPasswordModal"/>
+        </methods>
+      </class> <!-- scripts._02_Project -->
+      <class name="scripts._05_FacebookTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validateFacebookInvalidLoginAttempt"/>
+          <include name="setPage"/>
+        </methods>
+      </class> <!-- scripts._05_FacebookTest -->
+      <class name="scripts._01_Project">
+        <methods>
+          <include name="setUp"/>
+          <include name="setPage"/>
+          <include name="tearDown"/>
+          <include name="validateTheContactUsInformation"/>
+          <include name="validateTheFullNameInputBox"/>
+        </methods>
+      </class> <!-- scripts._01_Project -->
+      <class name="scripts._04_TGLocatorTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setPage"/>
+          <include name="validateListHeaders"/>
+        </methods>
+      </class> <!-- scripts._04_TGLocatorTest -->
+    </classes>
+  </test> <!-- /Users/carmelacreata/IdeaProjects/ui_automation_6/src/test/java/scripts(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
