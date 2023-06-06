@@ -1,5 +1,6 @@
 package scripts;
 
+import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -178,7 +179,7 @@ public class _01_Project extends Base {
 
     @Test(priority = 10, description = "Test Case 10 - Validate the form submission")
     public void validateTheFormSubmission(){
-        /*
+
         Faker faker = new Faker();
 
         WebElement nameInputBox = driver.findElement(By.xpath("//label[@for='name']/..//input"));
@@ -204,7 +205,7 @@ public class _01_Project extends Base {
         Assert.assertTrue(confirmationMessage.isDisplayed());
         Assert.assertEquals(confirmationMessage.getText(), "Thanks for submitting!");
 
-         */
+
     }
 
 
