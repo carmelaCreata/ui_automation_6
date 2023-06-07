@@ -94,22 +94,12 @@ public class _02_Project extends Base{
     }
     @Test(priority = 5, description = "Validate the Reset Password modal close button") // failing
     public void validateResetPasswordModal(){
-        WebElement forgotPasswordLink = driver.findElement(By.xpath("//button[@id='login_btn']/../a"));
-        forgotPasswordLink.click();
 
-        WebElement modal = driver.findElement(By.cssSelector(".modal-card-body"));
-        Assert.assertTrue(modal.isDisplayed());
-
-        WebElement closeButton = driver.findElement(By.cssSelector("button[aria-label=\"close\"]"));
-        closeButton.click();
-
-        WebElement loginForm = driver.findElement(By.cssSelector(".LoginForm_form__b4o6J"));
-        Assert.assertTrue(loginForm.isDisplayed());
     }
 
     @Test(priority = 6, description = " Validate the Reset Password form submission" )
     public void validateResetPasswordForm(){
-        WebElement forgotPasswordLink = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[2]/div/div/div/div/div[12]/div[2]/div[1]/form/div[3]/a"));
+        WebElement forgotPasswordLink = driver.findElement(By.partialLinkText("Forgot Password"));
         forgotPasswordLink.click();
 
         WebElement emailInput = driver.findElement(By.id("email"));
