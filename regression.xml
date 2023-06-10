@@ -1,47 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Regression Suite">
-    <test verbose="2" preserve-order="true"
-          name="/Users/carmelacreata/IdeaProjects/ui_automation_6/src/test/java/scripts">
+    <test verbose="2" preserve-order="true" name="All Functionalities">
         <classes>
             <class name="scripts._01_GoogleTest">
                 <methods>
-                    <include name="validateSearchBar"/>
+                    <exclude name="validateSearchBar"/>
                     <include name="validateTitleAndURL"/>
+                    <include name="validateNavigation"/>
                     <include name="validateSearchButton"/>
                 </methods>
             </class>
-            <class name="scripts.Project01">
-                <methods>
-                    <include name="validateTheContactUsInformation"/>
-                    <include name="validateTheFullNameInputBox"/>
-                    <include name="validateTheGenderRadioButton"/>
-                    <include name="validateTheAddressInputBox"/>
-                    <include name="validateTheEmailInputBox"/>
-                    <include name="validateThePhoneInputBox"/>
-                    <include name="validateTheMessageTextArea"/>
-                    <include name="validateTheConsentCheckbox"/>
-                    <include name="validateTheSubmitButton"/>
-                    <include name="validateTheFormSubmission"/>
-                </methods>
-            </class>
+            <class name="scripts.Project01"/>
+            <class name="scripts.Project02"/>
             <class name="scripts._02_AppleTest">
                 <methods>
-                    <include name="validateTitleAndUrl"/>
-                </methods>
-            </class>
-            <class name="scripts.Project02">
-                <methods>
-                    <include name="validateLoginForm"/>
-                    <include name="validateValidLogin"/>
-                    <include name="validateLogout"/>
-                    <include name="validateForgotPasswordAndResetPassword"/>
-                    <include name="validateResetPasswordModal"/>
-                    <include name="validateResetPasswordForm"/>
-                    <include name="validateInvalidLogin"/>
-                    <include name="validateWrongUsername"/>
-                    <include name="validateInvalidLoginWithWrongPassword"/>
-                    <include name="validateInvalidLoginWithWrongCredentials"/>
+                    <include name="validateTitleAndURL"/>
                 </methods>
             </class>
             <class name="scripts._03_TGLocatorsTest">
@@ -49,7 +23,7 @@
                     <include name="validateKiwiParagraph"/>
                     <include name="validateOrangeParagraph"/>
                     <include name="validateGrapesParagraph"/>
-                    <include name="validateAllParagraphs"/>
+                    <exclude name="validateAllParagraphs"/>
                     <include name="validateRedAppleLink"/>
                     <include name="validateAllLinks"/>
                 </methods>
@@ -64,13 +38,13 @@
             </class>
             <class name="scripts._05_FacebookTest">
                 <methods>
-                    <include name="validateFacebookLogin"/>
+                    <exclude name="validateFacebookLoginForm"/>
                     <include name="validateFacebookInvalidLoginAttempt"/>
                 </methods>
             </class>
             <class name="scripts._06_WikiTest">
                 <methods>
-                    <include name="validateWikiSearch1"/>
+                    <exclude name="validateWikiSearch1"/>
                     <include name="validateWikiSearch2"/>
                 </methods>
             </class>
@@ -89,13 +63,13 @@
             </class>
             <class name="scripts._09_TGCheckboxTest">
                 <methods>
-                    <include name="validateCheckboxes"/>
+                    <include name="checkboxTest"/>
                     <include name="checkboxTest2"/>
                 </methods>
             </class>
             <class name="scripts._10_TGRadioButtonsTest">
                 <methods>
-                    <include name="validateRadioButtons"/>
+                    <include name="radioButtonsTest"/>
                     <include name="validatePracticeMore"/>
                 </methods>
             </class>
@@ -127,9 +101,19 @@
                     <include name="validateTheLinkURLs"/>
                 </methods>
             </class>
+            <class name="scripts._15_TGFileUpload">
+                <methods>
+                    <include name="basicFileUpload"/>
+                </methods>
+            </class>
+            <class name="scripts._16_TGFileDownload">
+                <methods>
+                    <include name="validateFileDownload"/>
+                </methods>
+            </class>
             <class name="scripts._17_TGStaticTableTest">
                 <methods>
-                    <include name="validateTableHeaders"/>
+                    <include name="validateTableHeader"/>
                     <include name="validateFirstRow"/>
                     <include name="validateLastColumn"/>
                     <include name="validateEachCell"/>
@@ -138,9 +122,15 @@
             <class name="scripts._18_TGSortableTableTest">
                 <methods>
                     <include name="validateSortAscByQuantity"/>
-                    <include name="validateSortDscByQuantity"/>
                 </methods>
             </class>
+            <class name="scripts._19_TGActionTest"/>
         </classes>
     </test>
 </suite>
+
+
+
+
+
+

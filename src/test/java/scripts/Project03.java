@@ -15,6 +15,7 @@ public class Project03 extends Base{
     @BeforeMethod
     public void setPage(){
         driver.get("https://techglobal-training.com/frontend/project-3");
+
     }
     /** TEST CASE 1
      * Navigate to https://techglobal-training.com/frontend/project-3
