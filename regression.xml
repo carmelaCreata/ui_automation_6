@@ -11,7 +11,7 @@
                     <include name="validateSearchButton"/>
                 </methods>
             </class>
-            <class name="scripts._01_Project">
+            <class name="scripts.Project01">
                 <methods>
                     <include name="validateTheContactUsInformation"/>
                     <include name="validateTheFullNameInputBox"/>
@@ -30,7 +30,7 @@
                     <include name="validateTitleAndUrl"/>
                 </methods>
             </class>
-            <class name="scripts._02_Project">
+            <class name="scripts.Project02">
                 <methods>
                     <include name="validateLoginForm"/>
                     <include name="validateValidLogin"/>

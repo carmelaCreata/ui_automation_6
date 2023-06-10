@@ -10,7 +10,7 @@ import utils.Waiter;
 
 import java.util.List;
 
-public class _01_Project extends Base {
+public class Project01 extends Base {
 
     /** TEST CASE 1
      * Navigate to https://techglobal-training.com/frontend/project-1
