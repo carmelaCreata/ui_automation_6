@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import pages.Project3Page;
 import utils.DropdownHandler;
 
 import java.util.List;
@@ -15,6 +16,7 @@ public class Project03 extends Base{
     @BeforeMethod
     public void setPage(){
         driver.get("https://techglobal-training.com/frontend/project-3");
+        project3Page = new Project3Page();
 
 
     }
@@ -33,26 +35,21 @@ public class Project03 extends Base{
      */
     @Test
     public void validateBookTripForm(){
-       List <WebElement> radioButtonsInput = driver.findElements(By.className("mr-1"));
+       Assert.assertTrue(project3Page.radioButtonOneWay.isDisplayed());
+       Assert.assertTrue(project3Page.radioButtonOneWay.isEnabled());
+       Assert.assertTrue(project3Page.radioButtonOneWay.isSelected());
 
-        radioButtonsInput.forEach(rb->{
-            Assert.assertTrue(rb.isDisplayed());
-            Assert.assertTrue(rb.isEnabled());
+       Assert.assertTrue(project3Page.radioButtonRoundTrip.isDisplayed());
+       Assert.assertTrue(project3Page.radioButtonRoundTrip.isEnabled());
+       Assert.assertFalse(project3Page.radioButtonRoundTrip.isSelected());
 
-        });
 
-        Assert.assertTrue(radioButtonsInput.get(0).isSelected());
-        Assert.assertFalse(radioButtonsInput.get(1).isSelected());
+       Assert.assertTrue(project3Page.cabinClassLabel.isDisplayed());
+       Assert.assertTrue(project3Page.cabinClassDropdown.isDisplayed());
 
-       WebElement cabinClassLabel = driver.findElement(By.cssSelector(".field:nth-child(2)"));
-       WebElement cabinClassDropdown = driver.findElement(By.cssSelector(".field:nth-child(2) option"));
-       Assert.assertTrue(cabinClassLabel.isDisplayed());
-       Assert.assertTrue(cabinClassDropdown.isDisplayed());
 
-       WebElement fromLabel = driver.findElement(By.cssSelector(".field:nth-child(3)"));
-       WebElement fromLabelDropdown = driver.findElement(By.cssSelector(".field:nth-child(3) option"));
-       Assert.assertTrue(fromLabel.isDisplayed());
-       Assert.assertTrue(fromLabelDropdown.isDisplayed());
+       Assert.assertTrue(project3Page.fromLabel.isDisplayed());
+       Assert.assertTrue(project3Page.fromDropdown.isDisplayed());
 
        WebElement toLabel = driver.findElement(By.cssSelector(".field:nth-child(4)"));
        WebElement toDropdown = driver.findElement(By.cssSelector(".field:nth-child(4) option"));

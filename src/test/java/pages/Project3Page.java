@@ -18,50 +18,50 @@ public class Project3Page {
     public WebElement radioButtonRoundTrip;
 
     @FindBy(className = "mr-1")
-    WebElement radioButtonsInput;
+    public WebElement radioButtonsInput;
 
     @FindBy(css = ".field:nth-child(2)")
-    WebElement cabinClassLabel;
+    public WebElement cabinClassLabel;
 
     @FindBy(css = ".field:nth-child(2) option")
-    WebElement cabinClassDropdown;
+    public WebElement cabinClassDropdown;
 
     @FindBy(css = ".field:nth-child(3)")
-    WebElement fromLabel;
+    public WebElement fromLabel;
 
     @FindBy(css = ".field:nth-child(3) option")
-    WebElement fromDropdown;
+    public WebElement fromDropdown;
 
     @FindBy(css = ".field:nth-child(4)")
-    WebElement toLabel;
+    public WebElement toLabel;
 
     @FindBy(css = ".field:nth-child(4) option")
-    WebElement toDropdown;
+    public WebElement toDropdown;
 
     @FindBy(css = ".field:nth-child(5)")
-    WebElement departLabel;
+    public WebElement departLabel;
 
     @FindBy(css = ".field:nth-child(5) .control" )
-    WebElement departDatePicker;
+    public WebElement departDatePicker;
 
     @FindBy(css = ".field:nth-child(6)")
-    WebElement returnLabel;
+    public WebElement returnLabel;
 
     @FindBy(css = ".field:nth-child(6) .control")
-    WebElement returnDatePicker;
+    public WebElement returnDatePicker;
 
     @FindBy(css = ".field:nth-child(7)")
-    WebElement nrOfPassengersLabel;
+    public WebElement nrOfPassengersLabel;
 
     @FindBy(css = ".field:nth-child(7) option")
-    WebElement getNrOfPassengersDropdown;
+    public WebElement getNrOfPassengersDropdown;
 
     @FindBy(css = ".field:nth-child(8)")
-    WebElement passengerLabel;
+    public WebElement passengerLabel;
 
     @FindBy(css = ".field:nth-child(8) option")
-    WebElement passengerDropdown;
+    public WebElement passengerDropdown;
 
     @FindBy(xpath = "//button[@type='submit']")
-    WebElement submitButton;
+    public WebElement submitButton;
 }
