@@ -1,9 +1,14 @@
 package pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.Driver;
+import utils.DropdownHandler;
+
+import java.util.List;
 
 public class Project3Page {
 
@@ -54,7 +59,7 @@ public class Project3Page {
     public WebElement nrOfPassengersLabel;
 
     @FindBy(css = ".field:nth-child(7) option")
-    public WebElement getNrOfPassengersDropdown;
+    public WebElement nrOfPassengersDropdown;
 
     @FindBy(css = ".field:nth-child(8)")
     public WebElement passengerLabel;
@@ -64,4 +69,34 @@ public class Project3Page {
 
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement submitButton;
-}
+
+    @FindBy(css = ".field:nth-child(2) option")
+    public List<WebElement> dropdownClassOptions;
+
+    @FindBy(css = ".field:nth-child(3) option")
+    public List<WebElement> fromLabelOptions;
+
+    @FindBy(css = ".field:nth-child(4) option")
+    public List<WebElement> toLabelOptions;
+
+    @FindBy(css = ".field:nth-child(5) input")
+    public WebElement getDepartDatePicker;
+
+    @FindBy(css = ".field:nth-child(7) option")
+    public List<WebElement> getNrOfPassengersDropdown;
+
+    @FindBy(css = ".field:nth-child(8) option")
+    public List<WebElement> getPassengerDropdown;
+
+    @FindBy(css ="h1[class*='is-underlined']")
+    public WebElement  departText;
+
+    @FindBy(css ="h3[class*='is-italic']")
+    public WebElement  statesText;
+
+    @FindBy(css ="h3[class*='is-italic']")
+    public WebElement  dateText;
+
+
+    }
+
