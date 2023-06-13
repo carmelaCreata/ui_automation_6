@@ -99,7 +99,34 @@ public class Project03 extends Base {
         Assert.assertTrue(project3Page.radioButtonRoundTrip.isSelected());
         Assert.assertFalse(project3Page.radioButtonOneWay.isSelected());
 
-        validateDefaultBookTripForm();
+        Assert.assertTrue(project3Page.cabinClassLabel.isDisplayed());
+        Assert.assertTrue(project3Page.cabinClassDropdown.isDisplayed());
+
+        Assert.assertTrue(project3Page.fromLabel.isDisplayed());
+        Assert.assertTrue(project3Page.fromDropdown.isDisplayed());
+
+        Assert.assertTrue(project3Page.toLabel.isDisplayed());
+        Assert.assertTrue(project3Page.toDropdown.isDisplayed());
+
+        Assert.assertTrue(project3Page.departLabel.isDisplayed());
+        Assert.assertTrue(project3Page.departDatePicker.isDisplayed());
+
+
+        Assert.assertTrue(project3Page.returnLabel.isDisplayed());
+        Assert.assertTrue(project3Page.returnDatePicker.isDisplayed());
+        Assert.assertTrue(project3Page.returnDatePicker.isEnabled());
+
+        Assert.assertTrue(project3Page.nrOfPassengersLabel.isDisplayed());
+        Assert.assertTrue(project3Page.nrOfPassengersDropdown.isDisplayed());
+        Assert.assertEquals(project3Page.nrOfPassengersDropdown.getAttribute("value"), "1");
+
+
+        Assert.assertTrue(project3Page.passengerLabel.isDisplayed());
+        Assert.assertTrue(project3Page.passengerDropdown.isDisplayed());
+        Assert.assertEquals(project3Page.passengerDropdown.getText(), "Adult (16-64)");
+
+        Assert.assertTrue(project3Page.submitButton.isDisplayed());
+        Assert.assertTrue(project3Page.submitButton.isEnabled());
 
 
     }
